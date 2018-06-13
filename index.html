@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>中央牌智能空氣淨化器 KCP 121 </title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+    .kcp{
+        width: 35%;
+        
+    }
+    </style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#kingjih').fullpage({
+		sectionsColor: ['#white', '#4BBFC3', '#7BAABE', '#f90','#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+<!--Page define 
+page 1  首頁和立即購買連結 
+page 2  APP下載 Android/IOS
+page 3  常見問題
+page 4  使用手冊
+page 5  聯絡我們
+-->
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">立即購買</a></li>
+	<li data-menuanchor="page2"><a href="#page2">下載APP</a></li>
+	<li data-menuanchor="page3"><a href="#page3">常見問題</a></li>
+	<li data-menuanchor="page4"><a href="#page4">使用手冊</a></li>
+	<li data-menuanchor="page5"><a href="#page5">聯絡我們</a></li>
+</ul>
+
+<div id="kingjih">
+	<div class="section">
+				<img src="img/123.jpg" alt="" class="kcp">
+史上效能最強清淨機來襲!
+
+		</div>
+	<div class="section">
+		<h3>APP</h3>
+		<p>请查看左上角，点击可以控制</p>
+	</div>
+	<div class="section">
+		<h3>常見問題</h3>
+		<p>Link</p>
+	</div>
+	<div class="section">
+		<h3>使用手冊</h3>
+		<p>下載Link</p>
+	</div>
+		<div class="section">
+		<h3>使用手冊</h3>
+		<p>下載Link</p>
+	</div>
+</div>
+
+</body>
+</html>
