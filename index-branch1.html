@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-ZH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>中央牌智能空氣淨化器 KCP 121 </title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon" />
+<!--<script src="js/jquery-1.8.3.min.js"></script>-->
+	
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<script>
+$(function(){
+	$('#kingjih').fullpage({
+		sectionsColor: ['white', 'black','#4BBFC3', '#7BAABE', '#f90','#f90'],
+		anchors: ['page0','page1', 'page2', 'page3', 'page4','page5'],
+		menu: '#menu',
+        navigation: true,
+        'navigationPosition': 'left',
+        
+       //load animate        
+		afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.section2').find('div').fadeIn(2000);
+                console.log("section2.div");
+			}
+			if(index == 3){
+				$('.section3').find('div').delay(500).animate({
+					bottom: '0'
+				}, 1500, 'easeInQuad');
+			}
+			if(index == 4){
+				$('.section4').find('div').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+//			if(index == '2'){
+//				$('.section2').find('div').delay(500).animate({
+//					left: '-120%'
+//				}, 1500, 'easeInQuad');
+//			}
+			if(index == '3'){
+				$('.section3').find('p').delay(500).animate({
+					bottom: '-120%'
+				}, 1500, 'easeInQuad');
+                console.log("section3.p easeInQuad");
+			}
+			if(index == '4'){
+				$('.section4').find('p').fadeOut(2000);
+			}
+		}
+
+	});
+        $(window).resize(function(){
+        autoScrolling();
+    });
+
+    function autoScrolling(){
+        var $ww = $(window).width();
+        if($ww < 6000){
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+
+    autoScrolling();
+
+});
+</script>
+</head>
+
+<body>
+<!-- Page definitions -->
+<!--  
+page 0  首頁和立即購買連結 
+page 1  功能介紹 
+page 2  APP下載 Android/IOS
+page 3  常見問題
+page 4  使用手冊
+page 5  聯絡我們
+ -->
+
+<!--
+<ul id="menu">
+	<li data-menuanchor="page0" class="active"><a href="#page0">立即購買</a></li>
+	<li data-menuanchor="page1"><a href="#page1">功能介紹</a></li>
+	<li data-menuanchor="page2"><a href="#page2">下載APP</a></li>
+	<li data-menuanchor="page3"><a href="#page3">常見問題</a></li>
+	<li data-menuanchor="page4"><a href="#page4">使用手冊</a></li>
+	<li data-menuanchor="page5"><a href="#page5">聯絡我們</a></li>
+</ul>
+-->
+<nav>
+  <div class="container-fluid" id="menu">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">中央牌</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li data-menuanchor="page0" class="active"><a href="#page0">立即購買</a></li>
+	    <li data-menuanchor="page1"><a href="#page1">功能介紹</a></li>
+	    <li data-menuanchor="page2"><a href="#page2">下載APP</a></li>
+	    <li data-menuanchor="page3"><a href="#page3">常見問題</a></li>
+	    <li data-menuanchor="page4"><a href="#page4">使用手冊</a></li>
+	    <li data-menuanchor="page5"><a href="#page5">聯絡我們</a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!---->
+
+<div id="kingjih">
+	<div class="section section0">
+<!--            <img src="img/kcp.jpg" alt="" class="kcp">-->
+          <br/>
+          <br/>
+           <h2 class="title"> 效能超強清淨機の来襲!</h2>
+		
+		</div>
+<!--page1 功能介紹    -->
+     <div class="section section1">
+        <div class="slide">
+        </div>
+		<div class="slide "><h3>智能設定</h3>
+		<div class="row">
+  <div class="col-md-4"><img src="img/PMSensor.png" alt=""></div>
+  <div class="col-md-4"><h4>实时监测</h4><p>智能上报</p></div>
+  <div class="col-md-4">实时预警</div>
+</div>
+		
+		</div>
+		<div class="slide "><h3>濾網</h3></div>
+        <div class="slide "><h3>濾網</h3></div>
+             
+     </div>
+	<div class="section section2">
+		<h1>清淨機APP下載</h1>
+<!--
+		<div class=".col-xs-6 .col-md-4">
+		
+		</div>
+		
+-->
+    <div class="row">
+  <div class="col-xs-6 col-sm-4"></div>
+  <div class="col-xs-6 col-sm-4"><img src="img/android.png" alt="">	<img src="img/ios.png" alt=""></div>
+    <div class="clearfix visible-xs-block"></div>
+  <div class="col-xs-6 col-sm-4"></div>
+</div>
+		<div class=".col-xs-6 .col-md-4">
+		
+	
+		</div>
+			</div>
+	
+	<div class="section section3">
+		<h3>常見問題</h3>
+		<p>Link</p>
+
+
+		</div>
+	
+	<div class="section section4">
+		<h3>使用手冊</h3>
+		<p>下載Link</p>
+	</div>
+	
+    <div class="section section5">
+		<h3>聯絡我們</h3>
+		<a href="https://www.facebook.com/kingjihfans/"><img src="" alt="粉絲專頁"/></a>
+        <p>來電資訊</p>
+            <p>意见反馈</p>
+	</div>
+</div>
+
+</body>
+</html>
