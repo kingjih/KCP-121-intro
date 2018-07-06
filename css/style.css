@@ -1,13 +1,38 @@
-#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
-#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
-#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
-#menu .active a { color: #fff; background-color: #333;}
+#menu { width: 100%; margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;
+}
+#menu li { float: left; margin:  0 10px 0 0; font-size:20px; display: inline-block; }
+#menu a { float: left; padding: 10px 20px; background-color: #ccc; color: #fff; text-decoration: none;border-radius: 10px;}
+#menu .active a { color: #fff; background-color: #3ab967;}
+
+
 .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
 
-.section0 { background: url(../img/kcp.jpg) 50% no-repeat;
+.section0 { background: url(../img/kcp.jpg) 50% no-repeat  ;
 
 }
 
+.s1{
+    color: white;
+    
+    
+}
+/*
+.s2{
+     background: url(../img/10.jpg) 10% no-repeat  ;
+    
+}
+*/
+/*
+.section1 { background: url(../img/2.jpg)50% no-repeat ;
+
+}
+*/
+
 .title{
     color: black;
+    font-size: 1em;
+}
+
+.collapsed{
+    background-color:aqua;
 }
